@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+        *{
+            /* font-family: "Open Sans", serif; */
+            font-family: Tahoma, sans-serif;
+        }
+      .container {
+        max-width: 1150px;
+        margin: 20px auto;
+        padding-top: 100px;
+        padding-bottom: 60px;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        /* background: #e9edf1; */
+        /* padding: 5px; */
+        font-size: 13px;
+        margin-bottom: 80px;
+      }
+      .info div {
+        background: #17527f;
+        color: white;
+        /* padding: 5px 15px; */
+        /* border-radius: 5px; */
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        border: 1px solid #ccc;
+        padding: 5px;
+        font-size: 13px;
+        color: #17527f;
+        text-align: right;
+        font-weight: 500;
+      }
+      th {
+        background-color: #17527f;
+        color: white;
+        font-weight: 400;
+        font-size: 12px;
+      }
+      .total {
+        padding: 10px;
+        text-align: right;
+        color: white;
+        font-weight: 500;
+        font-size: 13px;
+      }
+
+      @media (max-width: 768px) {
+        .info{
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <img src="./first.png" alt="" />
+      </section>
+      <section>
+        <img src="./second.png" alt="" />
+      </section>
+      <section>
+        <img src="./third.png" alt="" />
+      </section>
+      <section class="h-1/2">
+        <div class="container">
+          <div class="info">
+            <div class="flex items-center">
+              <span class="bg-[#D8E6EF] text-[#1C4B7F] px-6">2.84</span>
+              <div class="px-2">المعدل التراكمي العام:</div>
+            </div>
+            <div class="flex items-center">
+              <span class="bg-[#D8E6EF] text-[#1C4B7F] px-6">20</span>
+              <div class="px-2">مجموع الساعات المسجلة - إجمالي الساعات:</div>
+            </div>
+            <div class="flex items-center">
+              <span class="bg-[#D8E6EF] text-[#1C4B7F] px-6">18.4</span>
+              <div class="px-2">مجموع النقاط:</div>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>عدد الساعات الباقية</th>
+                <th>عدد الساعات المجتازة</th>
+                <th>عدد الساعات المعتمدة</th>
+                <th>اسم المتطلب</th>
+                <th>الكود</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>9</td>
+                <td>1</td>
+                <td>10</td>
+                <td>متطلبات جامعة إجباري</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                  <td>162</td>
+                  <td>18</td>
+                  <td>180</td>
+                  <td>متطلبات كلية إجباري</td>
+                  <td>3</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>1</td>
+                <td>10</td>
+                <td>متطلبات كلية اختياري</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                  <td class="total bg-[#17527F]">180</td>
+                  <td class="total bg-[#17527F]">20</td>
+                  <td class="total bg-[#17527F]">200</td>
+                  <td class="total bg-[#F67E21]">إجمالي الساعات</td>
+                  <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <img src="./forth.png" alt="" />
+      </section>
+    </main>
+  </body>
+</html>
