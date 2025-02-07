@@ -1,0 +1,3 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+05:11:51	121139/121139	---MCZ	200	added ('OK')	text/html	date:Thu,%2006%20Feb%202025%2023:41:51%20GMT	https://o6u.edu.eg/default.aspx?id=70	./website_clone/o6u.edu.eg/default4f62.html	(from )
+05:11:52	101/101	---MCZ	404	error ('Not%20Found')	text/html	date:Thu,%2006%20Feb%202025%2023:41:52%20GMT	https://o6u.edu.eg/robots.txt		(from )

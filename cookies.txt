@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+o6u.edu.eg	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	zw3rqfpi1by5tgzwau1kjmbc
+o6u.edu.eg	TRUE	/	FALSE	1999999999	SameSite	Lax
+o6u.edu.eg	TRUE	/	FALSE	1999999999	MyO6UCulture	en-US
+
