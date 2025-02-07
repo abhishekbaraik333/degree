@@ -79,6 +79,22 @@ function __doPostBack(eventTarget, eventArgument) {
             alert("Invalid Username or Password");
         }
     }
+
+    function validateLogin2(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get input values
+        let username = document.getElementById("ucHeader_txtUserName2").value;
+        let password = document.getElementById("ucHeader_txtPassword2").value;
+
+        // Check credentials
+        if (username === "24100634@o6u.edu.pk" || password === "24100634HHH") {
+            // alert("Login Successful! Redirecting...");
+            window.location.href = "marks.html"; // Redirect to marks.html
+        } else {
+            alert("Invalid Username or Password");
+        }
+    }
 </script>
 
 
@@ -182,9 +198,9 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tpnlEve
                       <div id="ucHeader_Panel1" >
 	
                         <fieldset class="popover search">
-                            <input name="ucHeader$txtUserName" type="text" id="ucHeader_txtUserName" class="search_txt" />
-                            <input name="ucHeader$txtPassword" type="password" id="ucHeader_txtPassword" class="search_txt" />
-                            <input onclick="validateLogin(event)" type="submit" name="ucHeader$btnLogin" value="LOGIN" id="ucHeader_btnLogin" class="search_btn" />
+                            <input name="ucHeader$txtUserName" type="text" id="ucHeader_txtUserName2" class="search_txt" />
+                            <input name="ucHeader$txtPassword" type="password" id="ucHeader_txtPassword2" class="search_txt" />
+                            <input onclick="validateLogin2(event)" type="submit" name="ucHeader$btnLogin" value="LOGIN" id="ucHeader_btnLogin" class="search_btn" />
                             <a href="" >Register</a>
                             <span id="ucHeader_lblErrMsg" class="AdminErrMsg"></span>
                             <a id="ucHeader_lnkForgt" href="javascript:__doPostBack(&#39;ucHeader$lnkForgt&#39;,&#39;&#39;)">Forget Password</a>
