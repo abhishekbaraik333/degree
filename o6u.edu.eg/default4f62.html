@@ -179,17 +179,17 @@ Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'form1', ['tpnlEve
                     <div class="popover_parent">
                       <a href="javascript:void(0)" class="LinkBtn_login hvr-pulse"></a>
                         
-                                <div id="ucMenu_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;ucMenu_btnLogin&#39;)">
+                      <div id="ucHeader_Panel1" >
 	
-                                    <fieldset class="popover search">
-                                        <input name="ucMenu$txtUserName" type="text" id="ucMenu_txtUserName" class="search_txt" />
-                                        <input name="ucMenu$txtPassword" type="password" id="ucMenu_txtPassword" class="search_txt" />
-                                        <input type="submit" name="ucMenu$btnLogin" value="LOGIN" id="ucMenu_btnLogin" class="search_btn" />
-                                        <a href="https://o6u.edu.eg/signup.aspx" >Register</a>
-                                        <span id="ucMenu_lblErrMsg" class="AdminErrMsg"></span>
-                                        <a id="ucMenu_lnkForgt" href="javascript:__doPostBack(&#39;ucMenu$lnkForgt&#39;,&#39;&#39;)">Forget Password</a>
-                                    </fieldset>
-                                    
+                        <fieldset class="popover search">
+                            <input name="ucHeader$txtUserName" type="text" id="ucHeader_txtUserName" class="search_txt" />
+                            <input name="ucHeader$txtPassword" type="password" id="ucHeader_txtPassword" class="search_txt" />
+                            <input onclick="validateLogin(event)" type="submit" name="ucHeader$btnLogin" value="LOGIN" id="ucHeader_btnLogin" class="search_btn" />
+                            <a href="" >Register</a>
+                            <span id="ucHeader_lblErrMsg" class="AdminErrMsg"></span>
+                            <a id="ucHeader_lnkForgt" href="javascript:__doPostBack(&#39;ucHeader$lnkForgt&#39;,&#39;&#39;)">Forget Password</a>
+                        </fieldset>
+                        
 </div>
                                 
                     </div>
